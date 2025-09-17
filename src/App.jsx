@@ -15,14 +15,14 @@ function App() {
     setUser(type)
   }
 
-
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <Header />
       <SearchBar user={user} />
-      <Home user={user} />
+      <Home user={user} openModal={openModal} setOpenModal={setOpenModal} />
+      {openModal && <NewPost onClose={() => setOpenModal(false)} />}
     </>
   )
 }
-
 export default App

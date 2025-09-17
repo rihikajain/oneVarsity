@@ -100,13 +100,12 @@ const posts = [
 ];
 
 
-export default function MainFeed() {
-  const [openModal, setOpenModal] = useState(false);
+export default function MainFeed({ openModal, setOpenModal }) {
+
   return (
     <>
       <PostInput onOpenModal={() => setOpenModal(true)} />
       {openModal && <NewPost onClose={() => setOpenModal(false)} />}
-
       {
         posts.map((post) => (
           <Postcard key={post.id} {...post} />
