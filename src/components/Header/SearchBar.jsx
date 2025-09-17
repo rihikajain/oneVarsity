@@ -1,16 +1,17 @@
 import React from "react";
 import Button from "../ui/Button";
-import { Bell, Calendar } from "lucide-react";
+import { Search, Bell, Calendar } from "lucide-react";
 
 export default function SearchBar({ user }) {
   return (
-    <section className="fixed top-16 left-0 w-full bg-white z-40 shadow flex items-center justify-between p-3 px-3 h-22">
+    <section className="fixed top-16 left-0 w-full bg-white z-40 shadow flex items-center justify-between p-3 px-3 h-15">
       {/* Search Input */}
-      <div className="flex-1 flex items-center ">
+      <div className="relative flex w-full items-center">
+        <Search className="absolute left-3 text-gray-400" size={18} />
         <input
           type="text"
-          placeholder="Search for courses, people..."
-          className="w-full p-3 rounded-xl border-2 border-cardBorder focus:ring-blue-500 focus:border-blue-500 shadow"
+          placeholder=" Search for courses, people..."
+          className="flex-1 bg-whitee rounded-lg border border-cardBorder px-4 py-2 pl-9  focus:outline-none focus:border-bluee text-gray-500"
         />
       </div>
 

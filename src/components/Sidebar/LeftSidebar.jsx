@@ -3,7 +3,7 @@ import highlights from "./Highlights"
 import Button from '../ui/Button'
 function Card({ icon: Icon, title, children }) {
   return (
-    <div className="bg-white rounded-xl shadow p-4 mb-4 border-2 border-cardBorder relative">
+    <div className="bg-white rounded-xl shadow p-4 mb-3 border-2 border-cardBorder relative w-full">
       <div className="flex items-center mb-3 space-x-2">
 
         <Button className="bg-cardBg">
@@ -22,7 +22,7 @@ function Card({ icon: Icon, title, children }) {
 export default function LeftSidebar() {
   return (
 
-    <aside className=" bg-white w-full max-w-xl  shadow mb-4 border-2  border-cardBorder  rounded-xl p-4">
+    <aside className=" bg-white shadow mb-4 border-2  border-cardBorder w-full rounded-xl px-4 pt-2 ">
       <div className="flex items-center ">
         <span className="font-semibold text-lg ml-1 mb-4" >Highlights</span></div>
       {highlights.map(({ id, icon, title, content }) => (

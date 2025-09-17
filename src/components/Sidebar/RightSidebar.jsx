@@ -88,8 +88,8 @@ export default function RightSidebar({ user, cards }) {
   }
   return (
     <>
-      <div className="w-full max-w-md">
-        <div className="bg-whitee rounded-xl p-4 mb-4 border-2 border-cardBorder">
+      <div className="w-full h-screen ">
+        <div className="bg-whitee rounded-xl h-fit px-4 pt-4 mb-2 border-2 border-cardBorder">
           <div className="flex items-center justify-between mb-3">
             <span className="font-semibold text-lg">For You</span>
             <button className="text-black text-sm font-medium hover:text-bluee">See all</button>
@@ -99,7 +99,7 @@ export default function RightSidebar({ user, cards }) {
           ))}
         </div>
 
-        <div className="bg-whitee rounded-xl p-4 border-2 border-cardBorder">
+        <div className="bg-whitee h-fit rounded-xl px-4 pt-4 pb-3 border-2 border-cardBorder">
           <div className="font-semibold mb-4">Quick Links</div>
           <div className="grid grid-cols-2 gap-3">
             {quickLinks.map((link, idx) => (

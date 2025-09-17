@@ -66,18 +66,9 @@ const posts = [
     like: 17,
     comments: 7,
   },
+
   {
     id: 7,
-    name: "Michael Brown",
-    designation: "DevOps Specialist",
-    profile: "https://randomuser.me/api/portraits/men/77.jpg",
-    caption: "CI/CD pipeline upgrades completed.",
-    post: "https://images.unsplash.com/photo-1515165562835-c34c10767e15?auto=format&fit=crop&w=800&q=80",
-    like: 9,
-    comments: 2,
-  },
-  {
-    id: 8,
     name: "Jessica Wilson",
     designation: "Content Strategist",
     profile: "https://randomuser.me/api/portraits/women/48.jpg",
@@ -87,7 +78,7 @@ const posts = [
     comments: 6,
   },
   {
-    id: 9,
+    id: 8,
     name: "Chris Evans",
     designation: "Marketing Manager",
     profile: "https://randomuser.me/api/portraits/men/44.jpg",
