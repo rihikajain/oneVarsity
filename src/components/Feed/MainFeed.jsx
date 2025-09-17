@@ -1,6 +1,7 @@
+import NewPost from "./NewPost";
 import PostInput from "./PostInput";
 import Postcard from "./Postcard"
-
+import { useState } from "react";
 
 const posts = [
   {
@@ -100,9 +101,12 @@ const posts = [
 
 
 export default function MainFeed() {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
-      <PostInput />
+      <PostInput onOpenModal={() => setOpenModal(true)} />
+      {openModal && <NewPost onClose={() => setOpenModal(false)} />}
+
       {
         posts.map((post) => (
           <Postcard key={post.id} {...post} />
