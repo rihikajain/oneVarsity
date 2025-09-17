@@ -8,7 +8,7 @@ import Home from './pages/Home'
 import SearchBar from './components/Header/SearchBar'
 function App() {
 
-  let [user, setUser] = useState("student")
+  let [user, setUser] = useState("Admin")
   function homepage(type) {
     setUser(type)
   }
