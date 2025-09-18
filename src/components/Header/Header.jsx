@@ -12,7 +12,7 @@ function Header() {
         <div className="font-bold text-2xl tracking-wide">OneVarsity</div>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-4 flex-nowrap">
+        <div className="hidden md:flex items-center space-x-4">
           <NavLinks />
           <img
             src="https://randomuser.me/api/portraits/men/32.jpg"
@@ -25,6 +25,8 @@ function Header() {
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             <Menu />
+
+
           </button>
         </div>
       </header>

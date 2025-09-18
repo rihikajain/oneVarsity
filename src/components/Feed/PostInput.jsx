@@ -20,7 +20,7 @@ export default function PostInput({ onOpenModal }) {
         className="flex-1 bg-whitee rounded-lg border border-cardBorder px-4 py-2 focus:outline-none focus:border-bluee text-gray-500"
       />
       {/* Post button */}
-      <Button className="ml-3 bg-bluee text-whitee focus:bg-black" onClick={() => onOpenModal()}>
+      <Button className="ml-3 bg-bluee text-whitee hover:bg-whitee hover:text-bluee" onClick={() => onOpenModal()}>
         <div className="flex justify-center ">
           <Send size={18} className="mr-1" />
           Post
