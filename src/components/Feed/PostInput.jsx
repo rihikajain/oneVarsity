@@ -6,7 +6,7 @@ import Button from "../ui/Button";
 
 export default function PostInput({ onOpenModal }) {
   return (
-    <div className="bg-whitee rounded-xl flex items-center px-4 py-2 shadow border border-cardBorder mb-2">
+    <div className="bg-whitee rounded-xl flex items-center px-4 py-2  shadow border border-cardBorder mb-2">
       {/* Profile image */}
       <img
         src="https://randomuser.me/api/portraits/men/32.jpg"

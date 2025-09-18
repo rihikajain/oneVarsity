@@ -65,11 +65,11 @@ const quickLinks = [
 
 function RightCard({ icon: Icon, title, subtitle }) {
   return (
-    <div className="bg-cardBg rounded-xl flex items-center p-4 mb-3 shadow border-2 border-cardBorder">
+    <div className="bg-cardBg rounded-xl flex items-center p-4 mb-3 shadow border-2 border-cardBorder ">
       {Icon && <Icon className="text-black mr-4" size={28} />}
-      <div>
+      <div className="flex-1 min-w-0">
         <div className="font-semibold">{title}</div>
-        <div className="text-gray-600 text-sm">{subtitle}</div>
+        <div className="text-gray-600 text-sm break-all">{subtitle}</div>
       </div>
     </div>
   );
